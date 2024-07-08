@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Going shopping</title>
+</head>
+<body>
+<p>
+  You are at the food market for your fridge. You need some apples.
+  You need to get three problems right for apples. You can try again if you get it wrong.
+</p>
+<img src="img/apples-store.webp">
+
+<p>7 X 4 = <input id="answer1">?</input></p>
+<p>6 X 3 = <input id="answer2">?</input></p>
+<p>8 X 3 = <input id="answer3">?</input></p>
+
+<button onclick="myFunction()">done</button>
+
+<script>
+function myFunction() {
+    //alert("hello world")
+    if ((document.getElementById("answer1").value == "28")
+        && (document.getElementById("answer2").value == "18")
+        && (document.getElementById("answer3").value == "24")) {
+        window.location.href = "page3.html";
+
+    } else {
+        alert("you are wrong!!!!!!!!!!!!!!!!!!")
+    }
+}
+</script>
+
+
+</body>
+</html>

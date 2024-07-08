@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Going shopping</title>
+</head>
+<body>
+<p>
+  You are at the butcher for your fridge. You need some salami.
+  You need to get four problems right for salami. You can try again if you get it wrong.
+</p>
+<img src="img/salami-shop.png">
+
+<p>4 X 8 = <input id="answer1">?</input></p>
+<p>6 X 7 = <input id="answer2">?</input></p>
+<p>1 X 1 = <input id="answer3">?</input></p>
+
+
+<button onclick="myFunction()">done</button>
+
+<script>
+function myFunction() {
+    //alert("hello world")
+    if ((document.getElementById("answer1").value == "32")
+        && (document.getElementById("answer2").value == "42")
+        && (document.getElementById("answer3").value == "1")) {
+        window.location.href = "page11.html";
+
+    } else {
+        alert("you are wrong!!!!!!!!!!!!!!!!!!")
+    }
+}
+</script>
+
+
+</body>
+</html>

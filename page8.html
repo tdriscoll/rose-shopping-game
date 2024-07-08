@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Going shopping</title>
+</head>
+<body>
+<p>
+  You are at the vegetable market for your fridge. You need some lettuce.
+  You need to get three problems right for lettuce. You can try again if you get it wrong.
+</p>
+<img src="img/vegetable-shop.jpeg">
+
+<p>2 X 8 = <input id="answer1">?</input></p>
+<p>6 X 6 = <input id="answer2">?</input></p>
+<p>4 X 4 = <input id="answer3">?</input></p>
+
+
+<button onclick="myFunction()">done</button>
+
+<script>
+function myFunction() {
+    //alert("hello world")
+    if ((document.getElementById("answer1").value == "16")
+        && (document.getElementById("answer2").value == "36")
+        && (document.getElementById("answer3").value == "16")) {
+        window.location.href = "page9.html";
+
+    } else {
+        alert("you are wrong!!!!!!!!!!!!!!!!!!")
+    }
+}
+</script>
+
+
+</body>
+</html>
